@@ -10,15 +10,13 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
-
-// Gradient
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-white:                       #F9FBFD;
+$color-tangaroa:                    #011C40;
 
 // Typography
 // ---------------------------------
+
+$ff-default:                         "Montserrat", "Arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
@@ -43,13 +41,9 @@ $trans-600:                         0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
-$vp-320:                            320px;
-$vp-375:                            375px;
-$vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-mobile:                         320px;
+$vp-tablet:                         768px;
+$vp-desktop:                        1366px;
 
 // Retina
 // ---------------------------------
