@@ -1,0 +1,17 @@
+.about {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 54px;
+}
+
+.about p {
+  margin: 0;
+  font-size: 20px;
+}

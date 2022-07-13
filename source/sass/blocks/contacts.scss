@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  min-height: 546px;
+}
+
+.contacts__wrapper {
+  position: relative;
+  top: -10px;
+  margin-left: auto;
+  width: 500px;
+}
+
+.contacts p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.contacts address,
+.contacts a {
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 28px;
+
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contacts__address::before,
+.contacts__phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.contacts__address::before {
+  top: 1px;
+  background-image: url("../img/blocks/contacts/contacts-pin.svg");
+}
+
+.contacts__phone::before {
+  background-image: url("../img/blocks/contacts/contacts-phone.svg");
+}

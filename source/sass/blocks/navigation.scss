@@ -1,0 +1,12 @@
+.navigation {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 36px;
+  list-style: none;
+}
+
+.navigation a {
+  color: $color-white;
+}

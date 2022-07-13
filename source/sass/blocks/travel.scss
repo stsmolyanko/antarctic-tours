@@ -1,0 +1,21 @@
+.travel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 70px;
+}
+
+.travel__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 512px;
+  min-height: 541px;
+}
+
+.travel h2 {
+  margin-bottom: 18px;
+  font-size: 28px;
+  font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.footer__nav {
+  background-color: $color-tangaroa;
+}
+
+.footer__nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 138px;
+}
+
+.footer__nav-list {
+  position: relative;
+  left: -154px;
+}
+
+.footer__social {
+  position: relative;
+  top: 5px;
+}

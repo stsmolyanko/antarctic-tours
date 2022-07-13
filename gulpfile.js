@@ -65,7 +65,7 @@ const copySvg = () => {
 };
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
+  return gulp.src('source/img/**/*.{png,jpg,jpeg,webp}', {base: 'source'})
       .pipe(gulp.dest('build'));
 };
 
@@ -88,7 +88,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: 'build/',
-    index: 'sitemap.html',
+    index: 'index.html',
     notify: false,
     open: true,
     cors: true,
@@ -100,7 +100,7 @@ const syncServer = () => {
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, refresh));
-  gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
+  gulp.watch('source/img/**/*.{png,jpg,jpeg,webp}', gulp.series(copyImages, refresh));
 
   gulp.watch('source/favicon/**', gulp.series(copy, refresh));
   gulp.watch('source/video/**', gulp.series(copy, refresh));
@@ -128,13 +128,13 @@ const start = gulp.series(build, syncServer);
 
 const createWebp = () => {
   const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src(`source/img/${root}**/*.{png,jpg,jpeg}`)
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('build/img/**/*.{png,jpg,jpeg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
