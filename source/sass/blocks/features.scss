@@ -1,0 +1,76 @@
+.features {
+  padding-top: 119px;
+  padding-bottom: 120px;
+
+  background: url("../img/blocks/features/features-bg.jpeg") no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/blocks/features/features-bg@2x.jpeg");
+  }
+}
+
+.features h2 {
+  margin: 0;
+  margin-bottom: 58px;
+
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features__list {
+  display: flex;
+  column-gap: 40px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  padding: 30px 30px 25px;
+  width: 360px;
+
+  background-color: $color-white;
+}
+
+.features h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 52px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.features__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+}
+
+.features__header--ship::before {
+  background-image: url("../img/blocks/features/features-ship.svg");
+}
+
+.features__header--all-inclusive::before {
+  top: 5px;
+  background-image: url("../img/blocks/features/features-all-inclusive.svg");
+}
+
+.features__header--boat::before {
+  top: 8px;
+  background-image: url("../img/blocks/features/features-boat.svg");
+}
+
+.features p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -629,6 +629,7 @@ button,
 .header {
   background: url("../img/blocks/about/about.jpeg") no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 .header h2,
@@ -724,7 +725,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 70px;
 }
 
 .travel__wrapper {
@@ -746,6 +746,141 @@ button,
   margin-bottom: 18px;
   font-size: 28px;
   font-weight: 600;
+}
+
+.features {
+  padding-top: 119px;
+  padding-bottom: 120px;
+  background: url("../img/blocks/features/features-bg.jpeg") no-repeat;
+}
+
+.features h2 {
+  margin: 0;
+  margin-bottom: 58px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  padding: 30px 30px 25px;
+  width: 360px;
+  background-color: #F9FBFD;
+}
+
+.features h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 52px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.features__header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+}
+
+.features__header--ship::before {
+  background-image: url("../img/blocks/features/features-ship.svg");
+}
+
+.features__header--all-inclusive::before {
+  top: 5px;
+  background-image: url("../img/blocks/features/features-all-inclusive.svg");
+}
+
+.features__header--boat::before {
+  top: 8px;
+  background-image: url("../img/blocks/features/features-boat.svg");
+}
+
+.features p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises {
+  padding-top: 119px;
+}
+
+.cruises h2 {
+  margin: 0;
+  margin-bottom: 58px;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cruises__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #F9FBFD;
+}
+
+.cruises__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 260px;
+  min-height: 386px;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cruises__item--astoria {
+  background-image: url("../img/blocks/cruises/cruises-astoria.jpeg");
+}
+
+.cruises h3 {
+  display: inline-block;
+  margin: 0;
+  margin-top: auto;
+}
+
+.cruises__description {
+  display: none;
+}
+
+.cruises__item:hover .cruises__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .contacts {
@@ -864,5 +999,19 @@ button,
 @media (max-width: 320px) {
   .container {
     padding: 0 16px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/blocks/about/about@2x.jpeg");
+  }
+
+  .features {
+    background-image: url("../img/blocks/features/features-bg@2x.jpeg");
+  }
+
+  .cruises__item--astoria {
+    background-image: url("../img/blocks/cruises/cruises-astoria@2x.jpeg");
   }
 }

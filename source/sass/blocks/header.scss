@@ -1,6 +1,11 @@
 .header {
   background: url("../img/blocks/about/about.jpeg") no-repeat;
   background-size: cover;
+  background-position: bottom;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/blocks/about/about@2x.jpeg");
+  }
 }
 
 .header h2,
