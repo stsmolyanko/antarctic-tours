@@ -2,7 +2,10 @@
   padding-top: 119px;
   padding-bottom: 120px;
 
-  background: url("../img/blocks/features/features-bg.jpeg") no-repeat;
+  background-image: url("../img/blocks/features/features-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/blocks/features/features-bg@2x.jpeg");

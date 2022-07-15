@@ -1,0 +1,46 @@
+.booking {
+  display: flex;
+  align-items: stretch;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  min-height: 555px;
+
+  background-image: url("../img/blocks/booking/booking.jpeg");
+  background-size: cover;
+  background-position: bottom;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/blocks/booking/booking@2x.jpeg");
+  }
+}
+
+.booking .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 113px;
+  padding-right: 163px;
+}
+
+.booking__wrapper {
+  position: relative;
+  top: 6px;
+  padding-left: 50px;
+  width: 600px;
+}
+
+.booking h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.booking p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+}
