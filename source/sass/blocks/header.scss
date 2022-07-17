@@ -8,6 +8,12 @@
   }
 }
 
+.header .container {
+  @include vp-mobile {
+    padding: 0;
+  }
+}
+
 .header h2,
 .header p {
   color: $color-white;
@@ -20,10 +26,54 @@
   padding: 35px 0;
 
   min-height: 38px;
+
+  @include vp-tablet {
+    padding: 20px 0;
+  }
+
+  @include vp-mobile {
+    padding: 0;
+  }
+
+  &--open {
+    @include vp-mobile {
+      padding-left: 35px;
+    }
+  }
 }
 
 .header__logo {
   margin-right: auto;
+
+  &--white {
+    @include vp-mobile {
+      display: none;
+    }
+  }
+
+  &--blue {
+    display: none;
+
+    @include vp-mobile {
+      display: inline-block;
+    }
+  }
+
+  &--hidden {
+    @include vp-mobile {
+      display: none;
+    }
+  }
+
+  &--visible {
+    @include vp-mobile {
+      position: relative;
+      top: -6px;
+      left: 15px;
+      width: 50px;
+      display: inline-block;
+    }
+  }
 }
 
 .header__nav {
@@ -31,9 +81,53 @@
   align-items: center;
   margin-left: auto;
   min-height: 38px;
+
+  @include vp-mobile {
+    position: relative;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 21px 17px 30px;
+  }
+
+  &--white-bg {
+    @include vp-mobile {
+      background-color: $color-white;
+    }
+  }
+
+}
+
+.header__navigation-list {
+  padding-left: 10px;
+
+  @include vp-mobile {
+    &--hidden {
+      display: none;
+    }
+
+    &--visible {
+      position: absolute;
+      top: 26px;
+      display: flex;
+      padding: 14px 25px 80px;
+      background-color: $color-white;
+      transition: all 0.5s ease-out;
+    }
+  }
 }
 
 .header__about {
   margin-top: 183px;
   padding-left: 95px;
+
+  @include vp-tablet {
+    margin-top: 209px;
+    padding-left: 0;
+  }
+
+  @include vp-mobile {
+    margin-top: 102px;
+  }
 }

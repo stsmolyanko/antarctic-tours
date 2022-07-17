@@ -4,6 +4,27 @@ import {initModals} from './modules/modals/init-modals';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  const headerWrapper = document.querySelector('.header__wrapper');
+  const navigationContainer = document.querySelector('.header__nav');
+  const navigationList = document.querySelector('.header__navigation-list');
+  const burger = document.querySelector('.burger');
+  const logoWhite = document.querySelector('.header__logo--white');
+  const logoBlue = document.querySelector('.header__logo--blue');
+
+  navigationContainer.classList.remove('header__nav--white-bg');
+  navigationList.classList.add('header__navigation-list--hidden');
+  burger.classList.add('burger--visible');
+  logoBlue.classList.add('header__logo--hidden');
+  logoWhite.classList.add('header__logo--visible');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('burger--open');
+    logoBlue.classList.toggle('header__logo--hidden');
+    logoWhite.classList.toggle('header__logo--visible');
+    navigationContainer.classList.toggle('header__nav--white-bg');
+    navigationList.classList.toggle('header__navigation-list--visible');
+    headerWrapper.classList.toggle('header__wrapper--open');
+  });
 
   // Utils
   // ---------------------------------

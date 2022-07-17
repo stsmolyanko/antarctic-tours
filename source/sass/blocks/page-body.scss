@@ -1,4 +1,12 @@
 .page-body {
   display: grid;
-  grid-template-rows: minmax(650px, 0) 2781px minmax(684px, 0);
+  grid-template-rows: minmax(650px, 0) 1fr minmax(684px, 0);
+
+  @include vp-tablet {
+    grid-template-rows: minmax(638px, 0) 1fr minmax(655px, 0);
+  }
+
+  @include vp-mobile {
+    grid-template-rows: minmax(500px, 0) 1fr minmax(655px, 0);
+  }
 }

@@ -5,8 +5,29 @@
   justify-content: flex-start;
   column-gap: 36px;
   list-style: none;
+
+  @include vp-tablet {
+    column-gap: 25px;
+  }
+
+  @include vp-mobile {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 44px;
+    row-gap: 25px;
+  }
 }
 
 .navigation a {
   color: $color-white;
+
+  @include vp-tablet {
+    font-size: 14px;
+  }
+
+  @include vp-mobile {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-tangaroa;
+  }
 }

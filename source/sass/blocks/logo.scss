@@ -3,3 +3,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.logo img {
+  @include vp-tablet {
+    width: 38px;
+  }
+
+  @include vp-mobile {
+    width: 42px;
+  }
+}

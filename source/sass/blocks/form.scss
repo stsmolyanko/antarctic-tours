@@ -5,6 +5,15 @@
 
   color: $color-white;
   background-color: $color-tangaroa;
+
+  @include vp-tablet {
+    width: 92%;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    padding: 15px 30px 22px;
+  }
 }
 
 .form h3 {
@@ -12,6 +21,11 @@
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
+
+  @include vp-mobile {
+    margin-bottom: 22px;
+    text-align: center;
+  }
 }
 
 .form__field {
@@ -51,6 +65,11 @@
   top: -2px;
   padding-left: 23px;
   font-size: 10px;
+
+  @include vp-mobile {
+    padding-left: 28px;
+    line-height: 12px;
+  }
 }
 
 .form__field--agreement input + label::before {

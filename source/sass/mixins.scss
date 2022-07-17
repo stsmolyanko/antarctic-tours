@@ -6,20 +6,20 @@
 
 // Desktop first
 
-@mixin vp-desktop {
-  @media (max-width: $vp-desktop) {
-    @content;
-  }
-}
-
 @mixin vp-tablet {
-  @media (max-width: $vp-tablet) {
+  @media (max-width: $vp-desktop - 1) {
     @content;
   }
 }
 
 @mixin vp-mobile {
-  @media (max-width: $vp-mobile) {
+  @media (max-width: $vp-tablet - 1) {
+    @content;
+  }
+}
+
+@mixin vp-only-mobile {
+  @media (max-width: $vp-tablet - 1) and (min-width: $vp-mobile) {
     @content;
   }
 }

@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html,
@@ -12,7 +12,6 @@ body {
 }
 
 html {
-  box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;

@@ -6,4 +6,23 @@
   margin: 0;
 
   list-style: none;
+
+  @include vp-tablet {
+    column-gap: 23px;
+  }
+}
+
+.social__item--fb svg {
+  width: 9px;
+  height: 16px;
+}
+
+.social__item--inst svg {
+  width: 17px;
+  height: 15px;
+}
+
+.social__item--twitter svg {
+  width: 16px;
+  height: 15px;
 }
