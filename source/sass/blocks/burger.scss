@@ -13,8 +13,9 @@
   overflow: hidden;
   cursor: pointer;
 
-  &--visible {
-    @include vp-mobile {
+
+  @include vp-mobile {
+    &--visible {
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -27,6 +27,7 @@
 .footer__nav-list {
   position: relative;
   left: -154px;
+  justify-content: flex-end;
 
   @include vp-tablet {
     left: -31px;

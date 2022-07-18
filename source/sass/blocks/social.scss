@@ -8,21 +8,24 @@
   list-style: none;
 
   @include vp-tablet {
-    column-gap: 23px;
+    column-gap: 22px;
   }
 }
 
-.social__item--fb svg {
-  width: 9px;
-  height: 16px;
-}
+@include vp-tablet {
+  .social__item--fb svg {
 
-.social__item--inst svg {
-  width: 17px;
-  height: 15px;
-}
+    width: 9px;
+    height: 16px;
+  }
 
-.social__item--twitter svg {
-  width: 16px;
-  height: 15px;
+  .social__item--inst svg {
+    width: 17px;
+    height: 15px;
+  }
+
+  .social__item--twitter svg {
+    width: 16px;
+    height: 15px;
+  }
 }

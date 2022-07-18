@@ -23,8 +23,9 @@
   font-weight: 500;
 
   @include vp-mobile {
-    margin-bottom: 22px;
+    margin-bottom: 28px;
     text-align: center;
+    line-height: 26px;
   }
 }
 
@@ -80,6 +81,17 @@
   width: 18px;
   height: 18px;
   background-color: $color-white;
+}
+
+.form__field--agreement input:focus + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: $color-white;
+  border: 1px solid #f5a70c;
 }
 
 .form__field--agreement input:checked + label::after {

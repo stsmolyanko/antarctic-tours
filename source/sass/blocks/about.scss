@@ -7,8 +7,9 @@
 
 .about h2 {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
   font-size: 54px;
+  line-height: 58px;
 
   @include vp-tablet {
     margin-bottom: 29px;

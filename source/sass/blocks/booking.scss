@@ -2,11 +2,11 @@
   display: flex;
   align-items: stretch;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 51px;
 
   min-height: 555px;
 
-  background-image: url("../img/blocks/booking/booking.jpeg");
+  background: #badefb url("../img/blocks/booking/booking.jpeg") no-repeat;
   background-size: cover;
   background-position: bottom;
 
@@ -46,8 +46,6 @@
 }
 
 .booking__wrapper {
-  position: relative;
-  top: 6px;
   padding-left: 50px;
   flex: 0 1 600px;
 
@@ -63,9 +61,10 @@
 
 .booking h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 
   font-size: 40px;
+  line-height: 44px;
   font-weight: 700;
 
   @include vp-tablet {

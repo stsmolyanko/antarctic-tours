@@ -52,6 +52,7 @@
 
 .travel img {
   object-fit: cover;
+  background-color: #00467e;
 
   @include vp-tablet {
     width: 324px;
@@ -60,5 +61,6 @@
 
   @include vp-mobile {
     height: 187px;
+    width: 100%;
   }
 }

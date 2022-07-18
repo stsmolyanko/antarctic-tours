@@ -53,6 +53,7 @@
   flex: 1 1 260px;
   min-height: 386px;
   padding: 25px 30px;
+  background-color: #00467e;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -70,66 +71,98 @@
   }
 
   &--astoria {
-    background-image: url("../img/blocks/cruises/cruises-astoria.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-astoria.webp"),
+      url("../img/blocks/cruises/cruises-astoria.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-astoria@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-astoria@2x.webp"),
+        url("../img/blocks/cruises/cruises-astoria@2x.jpeg");
     }
   }
 
   &--eline {
-    background-image: url("../img/blocks/cruises/cruises-eline.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-eline.webp"),
+      url("../img/blocks/cruises/cruises-eline.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-eline@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-eline@2x.webp")
+        url("../img/blocks/cruises/cruises-eline@2x.jpeg");
     }
   }
 
   &--atlantis {
-    background-image: url("../img/blocks/cruises/cruises-atlantis.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-atlantis.webp")
+      url("../img/blocks/cruises/cruises-atlantis.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-atlantis@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-atlantis@2x.webp"),
+        url("../img/blocks/cruises/cruises-atlantis@2x.jpeg");
     }
   }
 
   &--odyssey {
-    background-image: url("../img/blocks/cruises/cruises-odyssey.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-odyssey.webp"),
+      url("../img/blocks/cruises/cruises-odyssey.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-odyssey@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-odyssey@2x.webp"),
+        url("../img/blocks/cruises/cruises-odyssey@2x.jpeg");
     }
   }
 
   &--olympia {
-    background-image: url("../img/blocks/cruises/cruises-olympia.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-olympia.webp"),
+      url("../img/blocks/cruises/cruises-olympia.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-olympia@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-olympia@2x.webp"),
+        url("../img/blocks/cruises/cruises-olympia@2x.jpeg");
     }
   }
 
   &--aurora {
-    background-image: url("../img/blocks/cruises/cruises-aurora.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-aurora.webp"),
+      url("../img/blocks/cruises/cruises-aurora.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-aurora@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-aurora@2x.webp"),
+        url("../img/blocks/cruises/cruises-aurora@2x.jpeg");
     }
   }
 
   &--leonor {
-    background-image: url("../img/blocks/cruises/cruises-leonor.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-leonor.webp"),
+      url("../img/blocks/cruises/cruises-leonor.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-leonor@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-leonor@2x.webp"),
+        url("../img/blocks/cruises/cruises-leonor@2x.jpeg");
     }
   }
 
   &--minion {
-    background-image: url("../img/blocks/cruises/cruises-minion.jpeg");
+    background-image:
+      url("../img/blocks/cruises/cruises-minion.webp"),
+      url("../img/blocks/cruises/cruises-minion.jpeg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/blocks/cruises/cruises-minion@2x.jpeg");
+      background-image:
+        url("../img/blocks/cruises/cruises-minion@2x.webp")
+        url("../img/blocks/cruises/cruises-minion@2x.jpeg");
     }
   }
 
@@ -143,7 +176,6 @@
 }
 
 .cruises h3 {
-  display: inline-block;
   margin: 0;
   margin-top: auto;
 

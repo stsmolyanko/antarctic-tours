@@ -1,10 +1,16 @@
 .header {
-  background: url("../img/blocks/about/about.jpeg") no-repeat;
+  background-color: #00467e;
+  background-image:
+    url("../img/blocks/about/about.webp"),
+    url("../img/blocks/about/about.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/blocks/about/about@2x.jpeg");
+    background-image:
+      url("../img/blocks/about/about@2x.webp"),
+      url("../img/blocks/about/about@2x.jpeg");
   }
 }
 
@@ -55,7 +61,7 @@
     display: none;
 
     @include vp-mobile {
-      display: inline-block;
+      display: flex;
     }
   }
 
@@ -71,7 +77,7 @@
       top: -6px;
       left: 15px;
       width: 50px;
-      display: inline-block;
+      display: flex;
     }
   }
 }
@@ -96,7 +102,6 @@
       background-color: $color-white;
     }
   }
-
 }
 
 .header__navigation-list {
@@ -119,7 +124,7 @@
 }
 
 .header__about {
-  margin-top: 183px;
+  margin-top: 166px;
   padding-left: 95px;
 
   @include vp-tablet {
