@@ -6,21 +6,27 @@
 
   min-height: 555px;
 
-  background: #badefb url("../img/blocks/booking/booking.jpeg") no-repeat;
+  background-color: #badefb;
+  background-image:
+    url("../img/blocks/booking/booking.webp"),
+    url("../img/blocks/booking/booking.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/blocks/booking/booking@2x.jpeg");
+    background-image:
+      url("../img/blocks/booking/booking@2x.webp"),
+      url("../img/blocks/booking/booking@2x.jpeg");
   }
 
   @include vp-tablet {
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 100px;
   }
 
   @include vp-mobile {
-    padding-top: 53px;
+    padding-top: 59px;
     padding-bottom: 64px;
   }
 }
@@ -50,12 +56,12 @@
   flex: 0 1 600px;
 
   @include vp-tablet {
-    flex: 1 1 155px;
+    flex: 1 1 157px;
     padding-left: 0;
   }
 
   @include vp-mobile {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
   }
 }
 
@@ -68,7 +74,7 @@
   font-weight: 700;
 
   @include vp-tablet {
-    margin-bottom: 19px;
+    margin-bottom: 9px;
     font-size: 34px;
   }
 

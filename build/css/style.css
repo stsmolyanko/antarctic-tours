@@ -440,6 +440,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -976,7 +977,7 @@ button,
 }
 
 .cruises__item--atlantis {
-  background-image: url("../img/blocks/cruises/cruises-atlantis.webp") url("../img/blocks/cruises/cruises-atlantis.jpeg");
+  background-image: url("../img/blocks/cruises/cruises-atlantis.webp"), url("../img/blocks/cruises/cruises-atlantis.jpeg");
 }
 
 .cruises__item--odyssey {
@@ -1068,7 +1069,9 @@ button,
   padding-top: 50px;
   padding-bottom: 51px;
   min-height: 555px;
-  background: #badefb url("../img/blocks/booking/booking.jpeg") no-repeat;
+  background-color: #badefb;
+  background-image: url("../img/blocks/booking/booking.webp"), url("../img/blocks/booking/booking.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
@@ -1354,7 +1357,7 @@ button,
   }
 
   .header__about {
-    margin-top: 209px;
+    margin-top: 191px;
     padding-left: 0;
   }
 
@@ -1369,7 +1372,7 @@ button,
   }
 
   .about h2 {
-    margin-bottom: 29px;
+    margin-bottom: 14px;
     font-size: 50px;
   }
 
@@ -1382,7 +1385,7 @@ button,
     -moz-column-gap: 35px;
     column-gap: 35px;
     padding-top: 69px;
-    padding-bottom: 76px;
+    padding-bottom: 77px;
   }
 
   .travel__wrapper {
@@ -1392,8 +1395,9 @@ button,
   }
 
   .travel h2 {
-    margin-bottom: 4px;
-    line-height: 34px;
+    margin-bottom: 0;
+    font-size: 26px;
+    line-height: 36px;
   }
 
   .travel img {
@@ -1411,18 +1415,14 @@ button,
   }
 
   .features__list {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-column-gap: 31px;
-    -moz-column-gap: 31px;
-    column-gap: 31px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
     row-gap: 30px;
   }
 
   .features__item {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 205px;
-    flex: 1 0 205px;
+    width: 206px;
     padding: 30px 10px 20px 20px;
   }
 
@@ -1470,7 +1470,7 @@ button,
   }
 
   .booking {
-    padding-top: 95px;
+    padding-top: 92px;
     padding-bottom: 100px;
   }
 
@@ -1487,13 +1487,13 @@ button,
 
   .booking__wrapper {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 155px;
-    flex: 1 1 155px;
+    -ms-flex: 1 1 157px;
+    flex: 1 1 157px;
     padding-left: 0;
   }
 
   .booking h2 {
-    margin-bottom: 19px;
+    margin-bottom: 9px;
     font-size: 34px;
   }
 
@@ -1663,15 +1663,13 @@ button,
 
   .header__navigation-list--visible {
     position: absolute;
+    height: 100vh;
     top: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 14px 25px 80px;
     background-color: #f9fbfd;
-    -webkit-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
   }
 
   .header__about {
@@ -1711,7 +1709,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 36px;
     padding-bottom: 64px;
   }
 
@@ -1720,8 +1718,9 @@ button,
   }
 
   .travel h2 {
-    font-size: 24px;
     margin-bottom: 1px;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .travel img {
@@ -1739,6 +1738,15 @@ button,
     margin-bottom: 37px;
   }
 
+  .features__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    padding-right: 25px;
+  }
+
   .cruises {
     padding-top: 63px;
     padding-bottom: 65px;
@@ -1753,12 +1761,16 @@ button,
     padding: 0 9px;
   }
 
+  .cruises__item:hover {
+    padding: 30px 25px 15px;
+  }
+
   .cruises__item {
     padding: 20px 25px;
   }
 
   .booking {
-    padding-top: 53px;
+    padding-top: 59px;
     padding-bottom: 64px;
   }
 
@@ -1768,7 +1780,7 @@ button,
   }
 
   .booking__wrapper {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
   }
 
   .booking h2 {
@@ -1863,7 +1875,7 @@ button,
   }
 
   .cruises__item--eline {
-    background-image: url("../img/blocks/cruises/cruises-eline@2x.webp") url("../img/blocks/cruises/cruises-eline@2x.jpeg");
+    background-image: url("../img/blocks/cruises/cruises-eline@2x.webp"), url("../img/blocks/cruises/cruises-eline@2x.jpeg");
   }
 
   .cruises__item--atlantis {
@@ -1887,11 +1899,11 @@ button,
   }
 
   .cruises__item--minion {
-    background-image: url("../img/blocks/cruises/cruises-minion@2x.webp") url("../img/blocks/cruises/cruises-minion@2x.jpeg");
+    background-image: url("../img/blocks/cruises/cruises-minion@2x.webp"), url("../img/blocks/cruises/cruises-minion@2x.jpeg");
   }
 
   .booking {
-    background-image: url("../img/blocks/booking/booking@2x.jpeg");
+    background-image: url("../img/blocks/booking/booking@2x.webp"), url("../img/blocks/booking/booking@2x.jpeg");
   }
 }
 

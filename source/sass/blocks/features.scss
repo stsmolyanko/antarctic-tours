@@ -49,9 +49,12 @@
   list-style: none;
 
   @include vp-tablet {
-    flex-wrap: wrap;
-    column-gap: 31px;
+    column-gap: 30px;
     row-gap: 30px;
+  }
+
+  @include vp-mobile {
+    flex-wrap: wrap;
   }
 }
 
@@ -62,8 +65,12 @@
   background-color: $color-white;
 
   @include vp-tablet {
-    flex: 1 0 205px;
+    width: 206px;
     padding: 30px 10px 20px 20px;
+  }
+
+  @include vp-mobile {
+    padding-right: 25px;
   }
 }
 

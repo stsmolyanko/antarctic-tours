@@ -68,6 +68,10 @@
     @include vp-tablet {
       padding: 30px 35px 15px;
     }
+
+    @include vp-mobile {
+      padding: 30px 25px 15px;
+    }
   }
 
   &--astoria {
@@ -89,14 +93,14 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image:
-        url("../img/blocks/cruises/cruises-eline@2x.webp")
+        url("../img/blocks/cruises/cruises-eline@2x.webp"),
         url("../img/blocks/cruises/cruises-eline@2x.jpeg");
     }
   }
 
   &--atlantis {
     background-image:
-      url("../img/blocks/cruises/cruises-atlantis.webp")
+      url("../img/blocks/cruises/cruises-atlantis.webp"),
       url("../img/blocks/cruises/cruises-atlantis.jpeg");
 
     @media (min-resolution: $retina-dppx) {
@@ -161,7 +165,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image:
-        url("../img/blocks/cruises/cruises-minion@2x.webp")
+        url("../img/blocks/cruises/cruises-minion@2x.webp"),
         url("../img/blocks/cruises/cruises-minion@2x.jpeg");
     }
   }
