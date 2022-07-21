@@ -2,6 +2,10 @@
   display: grid;
   grid-template-rows: minmax(650px, 0) 1fr minmax(684px, 0);
 
+  &--no-scroll {
+    overflow: hidden;
+  }
+
   @include vp-tablet {
     grid-template-rows: minmax(638px, 0) 1fr minmax(655px, 0);
   }

@@ -40,17 +40,29 @@
   font-weight: 600;
 
   @include vp-tablet {
+    max-width: 300px;
     margin-bottom: 0;
     font-size: 26px;
     line-height: 36px;
   }
 
   @include vp-mobile {
+    max-width: 260px;
     margin-bottom: 1px;
     font-size: 24px;
     line-height: 34px;
   }
 }
+
+// .travel__br-01,
+// .travel__br-02,
+// .travel__br-03 {
+//   display: none;
+
+//   @include vp-tablet {
+//     display: block;
+//   }
+// }
 
 .travel img {
   object-fit: cover;

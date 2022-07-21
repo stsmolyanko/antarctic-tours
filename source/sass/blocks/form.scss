@@ -11,6 +11,7 @@
   }
 
   @include vp-mobile {
+    min-height: 461px;
     width: 100%;
     padding: 15px 30px 22px;
   }
@@ -52,8 +53,13 @@
   }
 
   &[type="submit"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     font-weight: 600;
     cursor: pointer;
+    white-space: pre-line;
   }
 }
 

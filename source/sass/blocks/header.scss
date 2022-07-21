@@ -106,6 +106,7 @@
 
 .header__navigation-list {
   padding-left: 10px;
+  margin-left: 20px;
 
   @include vp-mobile {
     &--hidden {
@@ -118,8 +119,23 @@
       top: 26px;
       display: flex;
       padding: 14px 25px 80px;
+      margin-left: 0;
       background-color: $color-white;
     }
+  }
+}
+
+.header__menu-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-tangaroa-70;
+
+  &--open {
+    display: block;
   }
 }
 

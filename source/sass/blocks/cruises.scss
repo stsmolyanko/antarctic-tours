@@ -32,17 +32,25 @@
 }
 
 .cruises__list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   margin: 0;
   padding: 0 15px;
 
   list-style: none;
   color: $color-white;
 
+  @media (max-width: 1145px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @include vp-mobile {
+    grid-template-columns: 1fr;
     padding: 0 9px;
   }
 }
@@ -50,14 +58,16 @@
 .cruises__item {
   display: flex;
   flex-direction: column;
-  flex: 1 1 260px;
-  min-height: 386px;
+  height: 386px;
   padding: 25px 30px;
   background-color: #00467e;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     padding: 30px 25px 15px;
 
     font-size: 14px;
@@ -171,6 +181,7 @@
   }
 
   @include vp-tablet {
+    flex-basis: 309px;
     padding: 29px 35px;
   }
 
@@ -187,7 +198,9 @@
   font-weight: 500;
 }
 
-.cruises__item:hover h3 {
+.cruises__item:hover h3,
+.cruises__item:active h3,
+.cruises__item:focus h3 {
   margin: 0;
   margin-bottom: 13px;
 }
@@ -195,9 +208,12 @@
 .cruises__description {
   display: none;
   height: 100%;
+  overflow: auto;
 }
 
-.cruises__item:hover .cruises__description {
+.cruises__item:hover .cruises__description,
+.cruises__item:active .cruises__description,
+.cruises__item:focus .cruises__description {
   display: flex;
   flex-direction: column;
 }
@@ -223,7 +239,6 @@
   justify-content: center;
   align-items: center;
   padding: 8px 0;
-  margin-top: auto;
   width: 100%;
 
   font-weight: 600;

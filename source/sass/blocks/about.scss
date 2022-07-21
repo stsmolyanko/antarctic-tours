@@ -18,9 +18,17 @@
 
   @include vp-mobile {
     padding-left: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 44px;
+  }
+}
+
+.about__br-01 {
+  display: none;
+
+  @include vp-mobile {
+    display: block;
   }
 }
 

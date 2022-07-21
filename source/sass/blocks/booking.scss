@@ -35,8 +35,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 113px;
-  padding-right: 163px;
+  padding-left: 8.3vw;
+  padding-right: 12vw;
 
   @include vp-tablet {
     flex-direction: column;
@@ -61,7 +61,7 @@
   }
 
   @include vp-mobile {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -86,6 +86,20 @@
   }
 }
 
+.booking__br-01 {
+  display: none;
+
+  @include vp-mobile {
+    display: block;
+  }
+}
+
+.booking__br-02 {
+  @include vp-mobile {
+    display: none;
+  }
+}
+
 .booking p {
   margin: 0;
 
@@ -101,4 +115,8 @@
     line-height: 22px;
     text-align: center;
   }
+}
+
+.booking__form {
+  flex: 0 1 37%;
 }

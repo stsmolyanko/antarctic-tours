@@ -4,12 +4,17 @@ import {initModals} from './modules/modals/init-modals';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  const body = document.querySelector('.page-body');
   const headerWrapper = document.querySelector('.header__wrapper');
   const navigationContainer = document.querySelector('.header__nav');
   const navigationList = document.querySelector('.header__navigation-list');
+  const navigationOverlay = document.querySelector('.header__menu-bg');
   const burger = document.querySelector('.burger');
   const logoWhite = document.querySelector('.header__logo--white');
   const logoBlue = document.querySelector('.header__logo--blue');
+  const cruiseDescription = document.querySelector('.cruises__description')
+  const cruisesList = document.querySelector('.cruises__list');
+
 
   navigationContainer.classList.remove('header__nav--white-bg');
   navigationList.classList.add('header__navigation-list--hidden');
@@ -17,14 +22,31 @@ window.addEventListener('DOMContentLoaded', () => {
   logoBlue.classList.add('header__logo--hidden');
   logoWhite.classList.add('header__logo--visible');
 
-  burger.addEventListener('click', () => {
+  function toggleMenu() {
     burger.classList.toggle('burger--open');
     logoBlue.classList.toggle('header__logo--hidden');
     logoWhite.classList.toggle('header__logo--visible');
     navigationContainer.classList.toggle('header__nav--white-bg');
     navigationList.classList.toggle('header__navigation-list--visible');
     headerWrapper.classList.toggle('header__wrapper--open');
+    navigationOverlay.classList.toggle('header__menu-bg--open');
+    body.classList.toggle('page-body--no-scroll');
+  }
+
+  burger.addEventListener('click', () => {
+    toggleMenu();
   });
+
+  navigationOverlay.addEventListener('click', () => {
+    toggleMenu();
+  });
+
+  navigationList.addEventListener('click', (evt) => {
+    if (evt.target.tagName === 'A') {
+      toggleMenu();
+    }
+  });
+
 
   // Utils
   // ---------------------------------

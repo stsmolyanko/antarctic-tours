@@ -9,7 +9,7 @@
 
 .footer__nav .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   min-height: 138px;
 
@@ -25,19 +25,20 @@
 }
 
 .footer__nav-list {
-  position: relative;
-  left: -154px;
+  max-width: 750px;
   justify-content: flex-end;
+  margin-left: 40px;
 
   @include vp-tablet {
-    left: -31px;
+    margin-left: 25px;
   }
 
   @include vp-mobile {
     row-gap: 7px;
-    left: 0;
+
     margin-top: 21px;
     margin-bottom: 19px;
+    margin-left: 0;
   }
 }
 
@@ -55,9 +56,15 @@
 .footer__social {
   position: relative;
   top: 5px;
+  margin-left: auto;
+  max-width: 200px;
 
   @include vp-tablet {
     position: relative;
     top: 2px;
+  }
+
+  @include vp-mobile {
+    margin-left: 0;
   }
 }
