@@ -67,7 +67,8 @@
 
   &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:focus-within {
     padding: 30px 25px 15px;
 
     font-size: 14px;
@@ -200,7 +201,8 @@
 
 .cruises__item:hover h3,
 .cruises__item:active h3,
-.cruises__item:focus h3 {
+.cruises__item:focus h3,
+.cruises__item:focus-within h3  {
   margin: 0;
   margin-bottom: 13px;
 }
@@ -213,7 +215,8 @@
 
 .cruises__item:hover .cruises__description,
 .cruises__item:active .cruises__description,
-.cruises__item:focus .cruises__description {
+.cruises__item:focus .cruises__description,
+.cruises__item:focus-within .cruises__description {
   display: flex;
   flex-direction: column;
 }
