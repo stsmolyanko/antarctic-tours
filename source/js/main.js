@@ -12,8 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const logoWhite = document.querySelector('.header__logo--white');
   const logoBlue = document.querySelector('.header__logo--blue');
-  const cruiseDescription = document.querySelector('.cruises__description')
-  const cruisesList = document.querySelector('.cruises__list');
 
 
   navigationContainer.classList.remove('header__nav--white-bg');

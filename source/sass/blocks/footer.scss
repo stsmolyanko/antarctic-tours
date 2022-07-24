@@ -12,9 +12,11 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 138px;
+  column-gap: 40px;
 
   @include vp-tablet {
     min-height: 120px;
+    column-gap: 26px;
   }
 
   @include vp-mobile {
@@ -25,20 +27,23 @@
 }
 
 .footer__nav-list {
-  max-width: 750px;
-  justify-content: flex-end;
-  margin-left: 40px;
+  flex: 1 1 600px;
+  justify-content: flex-start;
 
   @include vp-tablet {
-    margin-left: 25px;
+    flex: 1 1 122px;
   }
 
   @include vp-mobile {
-    row-gap: 7px;
-
     margin-top: 21px;
     margin-bottom: 19px;
     margin-left: 0;
+  }
+}
+
+.footer__nav-list .navigation__item:not(:last-child) {
+  @include vp-tablet {
+    margin-bottom: 7px;
   }
 }
 
@@ -62,9 +67,17 @@
   @include vp-tablet {
     position: relative;
     top: 2px;
+    min-width: 87px;
   }
 
   @include vp-mobile {
     margin-left: 0;
   }
 }
+
+.footer__social .social__item:not(:first-child) {
+  @include vp-tablet {
+    margin-left: 22px;
+  }
+}
+

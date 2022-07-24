@@ -34,7 +34,7 @@
   min-height: 38px;
 
   @include vp-tablet {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   @include vp-mobile {
@@ -87,6 +87,7 @@
   align-items: center;
   margin-left: auto;
   min-height: 38px;
+  max-width: 1000px;
 
   @include vp-mobile {
     position: relative;
@@ -94,11 +95,14 @@
     margin-left: 0;
     width: 100%;
     min-height: 75px;
+    max-width: 600px;
     padding: 21px 17px 30px;
   }
 
   &--white-bg {
     @include vp-mobile {
+      min-height: 100vh;
+      overflow-y: auto;
       background-color: $color-white;
     }
   }
@@ -108,6 +112,11 @@
   padding-left: 10px;
   margin-left: 20px;
 
+  @include vp-tablet {
+    align-items: stretch;
+    padding-top: 16px;
+  }
+
   @include vp-mobile {
     &--hidden {
       display: none;
@@ -115,13 +124,19 @@
 
     &--visible {
       position: absolute;
-      height: 100vh;
+      min-height: 100vh;
       top: 26px;
       display: flex;
       padding: 14px 25px 80px;
       margin-left: 0;
       background-color: $color-white;
     }
+  }
+}
+
+.header__navigation-list .navigation__item:not(:last-child) {
+  @include vp-tablet {
+    margin-bottom: 25px;
   }
 }
 
@@ -144,7 +159,7 @@
   padding-left: 95px;
 
   @include vp-tablet {
-    margin-top: 191px;
+    margin-top: 185px;
     padding-left: 0;
   }
 

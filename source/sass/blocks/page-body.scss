@@ -6,6 +6,7 @@
     overflow: hidden;
   }
 
+
   @include vp-tablet {
     grid-template-rows: minmax(638px, 0) 1fr minmax(655px, 0);
   }

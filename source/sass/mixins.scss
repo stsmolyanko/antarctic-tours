@@ -19,7 +19,7 @@
 }
 
 @mixin vp-only-mobile {
-  @media (max-width: $vp-tablet - 1) and (min-width: $vp-mobile) {
+  @media (max-width: $vp-mobile) {
     @content;
   }
 }

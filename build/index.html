@@ -17,7 +17,7 @@
         <div class="header__menu-bg"></div>
         <div class="container">
           <div class="header__wrapper">
-            <a class="header__logo header__logo--white logo" href="">
+            <a class="header__logo header__logo--white logo">
               <img
                 src="img/logo/logo-white.svg"
                 alt="Логотип Круизы в Антарктику"
@@ -26,7 +26,7 @@
               >
             </a>
             <nav class="header__nav header__nav--white-bg">
-              <a class="header__logo header__logo--blue logo" href="">
+              <a class="header__logo header__logo--blue logo">
                 <img
                   src="img/logo/logo-blue.svg"
                   alt="Логотип Круизы в Антарктику"
@@ -62,7 +62,7 @@
         </div>
 
       </header>
-      <main>
+      <main class="page-main">
         <h1 class="visually-hidden">Круизы в Антарктику - Главная</h1>
         <section class="travel container">
           <div class="travel__wrapper">
@@ -274,7 +274,7 @@
             </li>
 
             <li class="cruises__item cruises__item--minion" tabindex="0">
-              <h3>Круиз "Минион - 1"</h3>
+              <h3>Круиз <nobr>"Минион - 1"</nobr></h3>
 
               <div class="cruises__description">
                 <dl>
@@ -343,6 +343,7 @@
                   name="form-item-agreement"
                   value="agree"
                   checked
+                  required
                 >
                 <label for="form__agreement-checkbox">Я согласен на обработку моих&nbsp;персональных данных</label>
               </div>
@@ -373,7 +374,7 @@
         <section class="footer__nav">
           <h2 class="visually-hidden">Навигация в футере</h2>
           <div class="container">
-            <a class="footer__logo logo" href="#">
+            <a class="footer__logo logo">
               <!-- 1х: 70px; 2x: 140px -->
               <img
                 src="img/logo/logo-white.svg"

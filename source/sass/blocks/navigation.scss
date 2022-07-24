@@ -5,7 +5,6 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 36px;
-  row-gap: 10px;
   list-style: none;
 
   @include vp-tablet {
@@ -16,7 +15,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 44px;
-    row-gap: 25px;
   }
 }
 

@@ -10,9 +10,10 @@
   list-style: none;
 
   @include vp-tablet {
-    column-gap: 22px;
+    column-gap: 0;
   }
 }
+
 
 @include vp-tablet {
   .social__item--fb svg {
